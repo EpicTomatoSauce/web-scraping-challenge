@@ -135,8 +135,9 @@ def scrape():
     
     return mars_data
 
-scrape()
-print(mars_data)
+# # Test to run and return scrape function
+# scrape()
+# print(mars_data)
     
     
     
