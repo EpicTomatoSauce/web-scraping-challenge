@@ -23,9 +23,9 @@ def home():
 def scrape():
   
     mars_data = mongo.db.mars_data
-    mars_data = scrape_mars.scrape()
+    mars_scrape = scrape_mars.scrape()
     # Update the Mongo database using update and upsert=True
-    mars_data.update({}, mars_data, upsert=True)
+    mars_data.update({}, mars_scrape, upsert=True)
     return redirect("/")
 
 if __name__ == "__main__":
